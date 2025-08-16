@@ -1,3 +1,4 @@
+> ⚠️ Note: This is a **Front-End only** project; no Back-End or database is included. All data is temporary.
 📚 Readin
 Project Description
 
@@ -49,5 +50,6 @@ Email: Layan.m.bajandooh@gmail.com
 Phone: 0562879178
 
 📄 License
+
 
 This project is educational. You can use, copy, or modify it freely, with proper credit to the original source.
