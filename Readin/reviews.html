@@ -1,0 +1,95 @@
+<!-- 
+    Page: reviews.html
+    Project: Readin
+    Description: Reviews page for the Readin platform.
+                 Displays book reviews submitted by users with
+                 their ratings and usernames. Includes the main
+                 navigation, search bar, and footer.
+    Author: teammate
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - Readin</title>
+  <!-- Common and page-specific CSS -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reviews.css">
+</head>
+<body>
+
+  <!-- Header section with logo and website name -->
+  <header>
+    <img src="images/logo.jpg" alt="Readin Logo" />
+    <h1 id="webSiteName">Readin</h1>
+  </header>
+
+  <!-- Navigation bar with links and search form -->
+  <nav id="navBar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="BrowseBook.html">Browse Books</a></li>
+      <li><a href="addBook.html">Add Book</a></li>
+      <li><a href="BookDetails.html">Book Details</a></li>
+      <li><a href="requestBorrow.html">Request Borrow</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+    <form class="search-form" action="#" method="get">
+      <input type="text" placeholder="Search books...">
+      <button type="submit">Search</button>
+    </form>
+  </nav>
+
+  <!-- Main content: list of book reviews -->
+  <main>
+    <h2>Book Reviews</h2>
+
+    <!-- Individual review block -->
+    <div class="review">
+      <img src="images/books/The Human Mind Crisis .jpg" alt="The Human Mind Crisis">
+      <p><strong>Username:</strong> Nora</p>
+      <p><strong>Review:</strong> Amazing book, I learned a lot!</p>
+      <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+    </div>
+
+    <div class="review">
+      <img src="images/books/Life in Administration .jpg" alt="Life in Administration">
+      <p><strong>Username:</strong> Ahmed</p>
+      <p><strong>Review:</strong> The writing style was great.</p>
+      <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>
+    </div>
+
+    <div class="review">
+      <img src="images/books/Coffee Journey.jpg" alt="Coffee Journey">
+      <p><strong>Username:</strong> Lama</p>
+      <p><strong>Review:</strong> Not my favorite, but interesting ideas.</p>
+      <p><strong>Rating:</strong> ⭐⭐⭐</p>
+    </div>
+
+  </main>
+
+  <!-- Footer section with about and contact info -->
+  <footer>
+    <div class="description">
+      <h3>About Readin</h3>
+      <p>A community-driven platform for sharing and borrowing books among locals.</p> 
+    </div>
+    <div class="contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@Readin.com</p>
+      <p>Phone: +966 512 3456 78</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+  
+  <!-- Page-specific and common JS scripts -->
+  <script src="js/reviews.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- 
+    Page: Home.html
+    Project: Readin
+    Description: Home page of the Readin platform.
+                 Welcomes users and provides login/signup form.
+                 Also includes search and navigation to other sections of the website.
+    Author: teammate
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home – Readin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/Home.css">
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <img src="images/logo.jpg" alt="Readin Logo" />
+    <h1 id="webSiteName">Readin</h1>
+  </header>
+
+  <!-- ===== Navigation Bar ===== -->
+  <nav id="navBar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="BrowseBook.html">Browse Books</a></li>
+      <li><a href="addBook.html">Add Book</a></li>
+      <li><a href="BookDetails.html">Book Details</a></li>
+      <li><a href="requestBorrow.html">Request Borrow</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+
+    <!-- Search Form -->
+    <form class="search-form" action="#" method="get">      <input type="text" placeholder="Search books..." />
+      <button type="submit">Search</button>
+    </form>
+  </nav>
+
+  <!-- ===== Main Content ===== -->
+  <main class="home-container">
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <h2>Welcome to Readin!</h2>
+      <p>
+        Your community-powered space for book lovers! Share your favorite reads and borrow books
+        from people around you. Join now and let your reading journey begin!
+      </p>
+    </section>
+
+    <!-- Login / Sign Up Section -->
+    <section class="login-section">
+      <div class="login-box">
+        <h2>🔒 Login or Sign Up</h2>
+        <form class="login-form">
+          <input type="text" placeholder="Name" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="login-footer">
+          Don’t have an account? <span class="highlight-link">Sign Up</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="description">
+      <h3>About Readin</h3>
+      <p>A community-driven platform for sharing and borrowing books among locals.</p>
+    </div>
+
+    <div class="contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@Readin.com</p>
+      <p>Phone: +966 512 3456 78</p>
+    </div>
+  </footer>
+
+  <!-- ===== Scroll-to-top Button ===== -->
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+  <!-- ===== Scripts ===== -->
+  <script src="js/common.js"></script>
+  <script src="js/Home.js"></script>
+</body>
+
+</html>

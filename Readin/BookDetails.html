@@ -1,0 +1,92 @@
+<!-- 
+    File: BookDetails.html
+    Project: Readin
+    Description: Displays detailed information about a specific book including title, author, 
+                 publication date, category, rating, and description. 
+                 Includes navigation, a back button to return to the book list, 
+                 and site-wide footer information.
+    Author: Layan Bajandooh
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Set viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details – Readin</title>
+    
+    <!-- Common and page-specific styles -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/BookDetails.css">
+</head>
+<body>
+    <!-- Website header with logo and name -->
+    <header>
+        <img src="images/logo.jpg" alt="Readin Logo" />
+        <h1 id="webSiteName">Readin</h1>
+    </header>
+    
+    <!-- Main navigation bar -->
+    <nav id="navBar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="BrowseBook.html">Browse Books</a></li>
+            <li><a href="addBook.html">Add Book</a></li>
+            <li><a href="BookDetails.html">Book Details</a></li>
+            <li><a href="requestBorrow.html">Request Borrow</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+        <!-- Search form -->
+        <form class="search-form" action="#" method="get">
+            <input type="text" placeholder="Search books...">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+    
+    <!-- Book details content -->
+    <div class="content">
+        <h2>Book Details</h2>
+        <div id="bookDetails">
+            <!-- Book cover image -->
+            <img src="images/books/DenOfTheLine.jpg" alt="Book Cover" id="bookCover" />
+            
+            <!-- Book text information -->
+            <div id="text">
+                <h3 id="bookTitle">The Lion's Den</h3>
+                <p><strong>Author:</strong> Osama Al-Muslim</p>
+                <p><strong>Published:</strong> 2022</p>
+                <p><strong>Category:</strong> Arabic Fantasy</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐☆ (4/5)</p>
+                <p><strong>Description:</strong></p>
+                <p id="bookDescription">
+                    Den of the Lion by Osama Al-Muslim contains a rich blend of Arabic fantasy. It is the sixth installment in the Basateen Arabistan series, a distinguished novel that many readers seek. If you are one of them, you are in the right place.
+                </p>
+                <!-- Back button to return to the book list -->
+                <button id="backBtn">Back to Book List</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer section with about and contact info -->
+    <footer>
+        <div class="description">
+            <h3>About Readin</h3>
+            <p>A community-driven platform for sharing and borrowing books among locals.</p>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@Readin.com</p>
+            <p>Phone: +966 512 3456 78</p>
+        </div>
+    </footer>
+    
+    <!-- Scroll-to-top button -->
+    <button onclick="scrollToTop()" id="topBtn">↑</button>
+    
+    <!-- Common and page-specific scripts -->
+    <script src="js/common.js"></script>
+    <script src="js/BookDetails.js"></script>
+</body>
+</html>

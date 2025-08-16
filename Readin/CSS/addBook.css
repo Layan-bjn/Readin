@@ -1,0 +1,95 @@
+/* 
+    File: addBook.css
+    Project: Readin
+    Description: Styles for the "Add Book" page. 
+                 This stylesheet defines the layout, form styling, 
+                 and interactive states for the book submission form.
+    Author: Layan Bajandooh
+*/
+
+/* Main content container */
+.content {
+  padding: 40px 20px;
+  max-width: 100%;
+}
+
+/* Page heading style */
+.content h2 {
+  color: #A05A2C;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Book form container styling */
+#bookForm {
+  background-color: #F9F9F9;
+  padding: 20px;
+  border: 1px solid #C2B8A3;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels (paragraphs inside the form) */
+#bookForm p {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #3B3B3B;
+}
+
+/* Text inputs and textarea fields */
+#bookForm input[type="text"],
+textarea {
+  width: 98%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #C2B8A3;
+  border-radius: 5px;
+}
+
+/* Focus effect for form fields */
+#bookForm input[type="text"]:focus,
+#bookForm textarea:focus,
+#searchForm input:focus {
+  background-color: #F0E6D2;
+  border: 2px solid #A05A2C;
+  outline: none;
+}
+
+/* Radio buttons and checkboxes */
+#bookForm input[type="radio"],
+#bookForm input[type="checkbox"] {
+  width: auto;
+  margin-bottom: 10px;
+}
+
+/* Primary submit button */
+#bookForm button[type="submit"] {
+  background-color: #463f3a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+#bookForm button[type="submit"]:hover {
+  background-color: #875e45;
+  color: #fff;
+}
+
+/* Hidden elements (used for confirmation messages) */
+.hidden {
+  display: none;
+}
+
+/* Confirmation message styling */
+#confirmationMessage {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: opacity 0.5s ease;
+}
+

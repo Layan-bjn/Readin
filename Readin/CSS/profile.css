@@ -1,0 +1,180 @@
+/* 
+    File: profile.css
+    Project: Readin
+    Description: CSS styles for the Profile page of the Readin platform.
+                 Includes styling for profile box, avatar, edit forms, success messages,
+                 and grids for currently borrowed books and borrowing history.
+                 Adds hover effects and responsive layouts for better UX.
+    Author: teammate
+*/
+
+/* Main profile content padding */
+.profile-content {
+  padding: 30px;
+}
+
+/* Profile box styling */
+.profile-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #463f3a;
+  margin-bottom: 20px;
+}
+
+/* Profile info layout (avatar + user info + buttons) */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Avatar container for profile picture and edit button */
+.avatar-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+/* Avatar image styling */
+.avatar-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #8a817c;
+  object-fit: cover;
+}
+
+/* Edit avatar button */
+.edit-avatar-btn {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background-color: #875e45;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: background-color 0.3s;
+}
+
+.edit-avatar-btn:hover {
+  background-color: #463f3a;
+}
+
+/* User name styling */
+.profile-info h3 {
+  margin: 2px;
+  color: #5d554f;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* User email styling */
+.email {
+  text-align: left;
+  margin: 4px;
+  color: #5d554f;
+  font-size: 16px;
+}
+
+/* Edit button inside profile-info */
+.profile-info button {
+  margin: 8px;
+  background-color: #875e45;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-info button:hover {
+  background-color: #595343;
+}
+
+/* Edit form container */
+.edit-form {
+  margin-top: 15px;
+}
+
+/* Inputs inside edit form */
+.edit-form input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #463f3a;
+  border-radius: 5px;
+}
+
+/* Save button inside edit form */
+.edit-form button {
+  background-color: #875e45;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-form button:hover {
+  background-color: #595343;
+}
+
+/* Success message after saving changes */
+.success-message {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Grid for displaying borrowed books and history */
+.book-grid {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+/* Individual book card styling */
+.book-card {
+  background-color: white;
+  border: 1px solid #8a817c;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: scale(1.03);
+}
+
+/* Book images inside card */
+.book-card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+/* Book title text */
+.book-card p {
+  font-size: 15px;
+  color: #463f3a;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Section titles (e.g., Currently Borrowed Books) */
+h4 {
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  color: #875e45;
+}

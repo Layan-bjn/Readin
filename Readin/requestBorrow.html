@@ -1,0 +1,111 @@
+<!-- 
+    Page: requestBorrow.html
+    Project: Readin
+    Description: Request Borrow page for the Readin platform.
+                 Allows users to submit a request to borrow a book by filling
+                 out their name, email, desired pickup date, and any additional notes.
+                 Includes a confirmation message upon successful submission.
+    Author: teammate
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Borrow – Readin</title>
+    <!-- Common CSS for site-wide styling -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- Page-specific CSS for Request Borrow page -->
+    <link rel="stylesheet" href="css/requestBorrow.css">
+</head>
+
+<body>
+    <!-- Header section with logo and site name -->
+    <header>
+        <img src="images/logo.jpg" alt="Readin Logo" />
+        <h1 id="webSiteName">Readin</h1>
+    </header>
+
+    <!-- Navigation bar with links to all pages and search form -->
+    <nav id="navBar">
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="BrowseBook.html">Browse Books</a></li>
+            <li><a href="addBook.html">Add Book</a></li>
+            <li><a href="BookDetails.html">Book Details</a></li>
+            <li><a href="requestBorrow.html">Request Borrow</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+
+        <!-- Search form to search books -->
+        <form class="search-form" action="#" method="get">
+            <input type="text" placeholder="Search books...">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <!-- Page title -->
+    <h2 class="page-title">Request to Borrow a Book</h2>
+
+    <!-- Main content: Borrow request form -->
+    <main class="form-page">
+        <div class="form-container">
+            <!-- Form for submitting a borrow request -->
+            <form id="borrowForm">
+                <!-- Book title input -->
+                <label for="bookTitle">Book Title</label>
+                <input type="text" id="bookTitle" name="bookTitle" required />
+
+                <!-- Full name input -->
+                <label for="fullName">Your Full Name</label>
+                <input type="text" id="fullName" name="fullName" required />
+
+                <!-- Email input -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+
+                <!-- Preferred pickup date input -->
+                <label for="pickupDate">Preferred Pickup Date</label>
+                <input type="date" id="pickupDate" name="pickupDate" required />
+
+                <!-- Additional notes textarea -->
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <!-- Submit button -->
+                <button type="submit" class="submit-button">Submit Request</button>
+            </form>
+
+            <!-- Confirmation message displayed after form submission -->
+            <div id="confirmationMessage" style="display:none;">
+                Your request has been sent successfully!
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- About Readin description -->
+        <div class="description">
+            <h3>About Readin</h3>
+            <p>A community-driven platform for sharing and borrowing books among locals.</p>
+        </div>
+
+        <!-- Contact information -->
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@Readin.com</p>
+            <p>Phone: +966 512 3456 78</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+    <!-- JS for form behavior and common site scripts -->
+    <script src="js/requestBorrow.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

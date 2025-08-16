@@ -1,0 +1,138 @@
+<!-- 
+  File: profile.html
+  Project: Readin
+  Description: Profile page for users. 
+               Shows user info, avatar editing, currently borrowed books, and borrowing history.
+  Author: teammate
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page – Readin</title>
+    <!-- Common CSS shared across all pages -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- Profile page specific styles -->
+    <link rel="stylesheet" href="css/profile.css">
+  </head>
+
+  <body>
+    <!-- Header: Website logo and name -->
+    <header>
+      <img src="images/logo.jpg" alt="Readin Logo" />
+      <h1 id="webSiteName">Readin</h1>
+    </header>
+
+    <!-- Navigation bar with links to other pages -->
+    <nav id="navBar">
+       <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="BrowseBook.html">Browse Books</a></li>
+            <li><a href="addBook.html">Add Book</a></li>
+            <li><a href="BookDetails.html">Book Details</a></li>
+            <li><a href="requestBorrow.html">Request Borrow</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+       </ul>
+
+      <!-- Search form for books -->
+      <form class="search-form" action="#" method="get">
+        <input type="text" placeholder="Search books...">
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+
+    <!-- Main content of the profile page -->
+    <main class="profile-content">
+      <!-- Profile box with avatar, username, email, and edit button -->
+      <div class="profile-box">
+        <div class="profile-info">
+          <!-- Avatar container with edit option -->
+          <div class="avatar-container">
+            <img id="avatar" src="images/profilepic.jpg" alt="Profile Picture" onerror="this.src='avatar';">
+            <label for="avatarUpload" class="edit-avatar-btn">✎</label>
+            <input type="file" id="avatarUpload" accept="image/*" style="display:none;">
+          </div>
+
+          <!-- User info section -->
+          <div>
+            <h3 class="username">Lina B</h3>
+            <p class="email">lina@example.com</p>
+            <!-- Button to toggle edit form -->
+            <button onclick="toggleEditForm()">Edit</button>
+          </div>
+        </div>
+
+        <!-- Edit form for name and email -->
+        <div id="edit-form" style="display:none;" class="edit-form">
+          <input type="text" id="edit-name" placeholder="New Name">
+          <input type="email" id="edit-email" placeholder="New Email" required>
+          <button onclick="saveChanges()">Save</button>
+        </div>
+
+        <!-- Success message shown after saving changes -->
+        <div id="successMessage" class="success-message" style="display:none;">Changes saved successfully!</div>
+      </div>
+
+      <!-- Section showing currently borrowed books -->
+      <div class="section">
+        <h4>Currently Borrowed Books</h4>
+        <div class="book-grid">
+          <div class="book-card">
+            <img src="images/books/Aqwam Qeela.jpg" alt="Aqwam Qeela">
+            <p>Aqwam Qeela</p>
+          </div>
+          <div class="book-card">
+            <img src="images/books/The Little Prince.jpg" alt="The Little Prince">
+            <p>The Little Prince</p>
+          </div>
+          <div class="book-card">
+            <img src="images/books/Letting Go.jpg" alt="Letting Go">
+            <p>Letting Go</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section showing borrowing history -->
+      <div class="section">
+        <h4>Borrowing History</h4>
+        <div class="book-grid">
+          <div class="book-card">
+            <img src="images/books/The Happy Brain.jpg" alt="The Happy Brain">
+            <p>The Happy Brain</p>
+          </div>
+          <div class="book-card">
+            <img src="images/books/Coffee Journey.jpg" alt="Coffee Journey">
+            <p>Coffee Journey</p>
+          </div>
+          <div class="book-card">
+            <img src="images/books/For the Crown.jpg" alt="For The Crown">
+            <p>For The Crown</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer with about and contact info -->
+    <footer>
+      <div class="description">
+        <h3>About Readin</h3>
+        <p>A community-driven platform for sharing and borrowing books among locals.</p>
+      </div>
+
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@Readin.com</p>
+        <p>Phone: +966 512 3456 78</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+    <!-- Include JavaScript files -->
+    <script src="js/common.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

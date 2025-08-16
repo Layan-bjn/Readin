@@ -1,0 +1,130 @@
+/*
+    File: common.css
+    Project: Readin
+    Description: Shared styles applied across all pages of the Readin platform. 
+                 Includes global layout, typography, header, navigation, footer, 
+                 search form, and scroll-to-top button styling.
+    Author: Layan Bajandooh
+*/
+
+/* ===== General Body Settings ===== */
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f4f3ee;
+  margin: 0;
+  color: #020202;
+}
+
+/* ===== Header Styling ===== */
+header {
+  background-color: #463f3a;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+header img {
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+#webSiteName {
+  font-size: 28px;
+  color: #EDEDE1;
+  margin: 0;
+}
+
+/* ===== Navigation Styling ===== */
+nav {
+  background-color: #8a817c;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+nav ul li {
+  display: inline;
+}
+nav a {
+  text-decoration: none;
+  color: #f4f3ee;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  background-color: #463f3a;
+}
+
+/* ===== Search Form ===== */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.search-form input {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid #463f3a;
+  outline: none;
+  width: 200px;
+}
+.search-form input:focus {
+  background-color: #F0E6D2;
+  border: 2px solid #A05A2C;
+}
+.search-form button {
+  margin-left: 5px;
+  background-color: #875e45;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.search-form button:hover {
+  background-color: #463f3a;
+}
+
+/* ===== Footer Styling ===== */
+footer {
+  background-color: #463f3a;
+  color: #f4f3ee;
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer div {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+/* ===== Scroll-to-Top Button ===== */
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #A05A2C;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+#topBtn:hover {
+  background-color: #8a817c;
+}

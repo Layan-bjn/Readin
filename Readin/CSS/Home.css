@@ -1,0 +1,120 @@
+/* 
+    File: Home.css
+    Project: Readin
+    Description: Styles for the Home page of Readin.
+                 Includes welcome section, login/signup form, and layout adjustments.
+    Author: teammate
+*/
+
+/* ===== Container ===== */
+.home-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ===== Welcome Section ===== */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.welcome-section h2 {
+  font-size: 40px;
+  color: #875e45;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-family: 'Georgia', serif;
+}
+
+.welcome-section p {
+  font-size: 20px;
+  color: #5a4a42;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Highlighted Links */
+.highlight-link {
+  color: #875e45;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ===== Login Box ===== */
+.login-box {
+  background-color: #d4cfc7;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  text-align: center;
+  margin: 60px auto;
+  color: #463f3a;
+}
+
+.login-box h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #463f3a;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ===== Login Form ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f4f3ee;
+  font-size: 16px;
+  color: #3b3b3b;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  outline: none;
+  background-color: #eae7e1;
+}
+
+/* Login Button */
+.login-btn {
+  padding: 12px;
+  background: linear-gradient(to right, #875e45, #6b625b);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(to right, #6b625b, #875e45);
+}
+
+/* Login Footer */
+.login-footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #3b3b3b;
+}
+
+.login-footer a {
+  color: #875e45;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}

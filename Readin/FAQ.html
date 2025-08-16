@@ -1,0 +1,100 @@
+<!-- 
+    Page: FAQ.html
+    Project: Readin
+    Description: Frequently Asked Questions page for the Readin platform.
+                 Users can quickly find answers about browsing, borrowing, and lending books,
+                 as well as managing their profiles. This page includes interactive
+                 elements that expand/collapse answers for better UX.
+    Author: teammate
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ – Readin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/FAQ.css">
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <img src="images/logo.jpg" alt="Readin Logo" />
+    <h1 id="webSiteName">Readin</h1>
+  </header>
+
+  <!-- ===== Navigation Bar ===== -->
+  <nav id="navBar">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="BrowseBook.html">Browse Books</a></li>
+      <li><a href="addBook.html">Add Book</a></li>
+      <li><a href="BookDetails.html">Book Details</a></li>
+      <li><a href="requestBorrow.html">Request Borrow</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+
+    <!-- Search Form -->
+    <form class="search-form" action="#" method="get">
+      <input type="text" placeholder="Search books..." />
+      <button type="submit">Search</button>
+    </form>
+  </nav>
+
+  <!-- ===== FAQ Section ===== -->
+  <main class="faq-container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <!-- FAQ Item 1 -->
+    <div class="faq-item">
+      <button class="faq-question">How does Readin work?</button>
+      <div class="faq-answer">
+        <p>You can browse, borrow, or lend books within your local community through Readin.</p>
+      </div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item">
+      <button class="faq-question">Do I need to pay to borrow a book?</button>
+      <div class="faq-answer">
+        <p>No. Readin is a community-based platform where borrowing is free unless noted otherwise by the book owner.</p>
+      </div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-item">
+      <button class="faq-question">Can I track who borrowed my books?</button>
+      <div class="faq-answer">
+        <p>Yes! You’ll have a profile page where you can see your shared and borrowed books.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="description">
+      <h3>About Readin</h3>
+      <p>A community-driven platform for sharing and borrowing books among locals.</p>
+    </div>
+
+    <div class="contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@Readin.com</p>
+      <p>Phone: +966 512 3456 78</p>
+    </div>
+  </footer>
+
+  <!-- ===== Scroll-to-top Button ===== -->
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+  <!-- ===== Scripts ===== -->
+  <script src="js/common.js"></script>
+  <script src="js/FAQ.js"></script>
+
+</body>
+
+</html>

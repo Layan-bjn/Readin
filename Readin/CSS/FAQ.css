@@ -1,0 +1,69 @@
+/*
+    File: FAQ.css
+    Project: Readin
+    Description: Styles for the FAQ (Frequently Asked Questions) page of the Readin website.
+                 Includes container layout, question buttons, hover effects, and smooth
+                 expand/collapse animation for answers.
+    Author: teammate
+*/
+
+/* ===== FAQ Container ===== */
+.faq-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #f4f3ee;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+/* Page Title */
+.faq-title {
+  text-align: center;
+  font-size: 30px;
+  color: #875e45;
+  margin-bottom: 40px;
+}
+
+/* Individual FAQ Item */
+.faq-item {
+  margin-bottom: 20px;
+}
+
+/* FAQ Question Button */
+.faq-question {
+  background-color: #d4cfc7;
+  border: none;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #463f3a;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for questions */
+.faq-question:hover {
+  background-color: #c6c1ba;
+}
+
+/* FAQ Answer (collapsed by default) */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background-color: #f9f8f6;
+  border-radius: 0 0 10px 10px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+/* Text inside FAQ answers */
+.faq-answer p {
+  color: #3b3b3b;
+  font-size: 16px;
+  margin: 10px 0;
+}

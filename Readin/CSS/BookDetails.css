@@ -1,0 +1,88 @@
+/* 
+    File: BookDetails.css
+    Project: Readin
+    Description: Styles for the Book Details page, including layout for book cover, 
+                 text details, and interactive buttons. Designed for a clean, 
+                 responsive, and user-friendly display.
+    Author: Layan Bajandooh
+*/
+
+/* ===== Page Content Container ===== */
+.content {
+  padding: 40px 20px;
+  max-width: 100%;
+}
+
+/* Page Title */
+.content h2 {
+  color: #A05A2C;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* ===== Book Details Card ===== */
+#bookDetails {
+  background-color: #F9F9F9;
+  padding: 20px;
+  border: 1px solid #C2B8A3;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  /* Layout: reverse to show image on the right in RTL languages */
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Text container inside book details */
+#text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ===== Book Cover Image ===== */
+#bookCover {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* ===== Book Title ===== */
+#bookDetails h3 {
+  color: #A05A2C;
+  margin-bottom: 10px;
+}
+
+/* Book info paragraphs */
+#bookDetails p {
+  color: #3B3B3B;
+  line-height: 1.5;
+  margin: 8px 0;
+  text-align: left;
+}
+
+/* ===== Back Button Styling ===== */
+#backBtn {
+  background-color: #463f3a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 100px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  
+  /* Smooth hover transition */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Back Button */
+#backBtn:hover {
+  background-color: #875e45;
+  color: #fff;
+}

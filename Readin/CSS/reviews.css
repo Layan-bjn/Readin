@@ -1,0 +1,71 @@
+/* 
+    File: reviews.css
+    Project: Readin
+    Description: Styles for the Reviews page. 
+                 Includes layout for book cards and review blocks,
+                 as well as responsive display and visual enhancements.
+    Author: teammate
+*/
+
+/* Page title styling */
+main h2{
+  color: #875e45;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: left;
+}
+
+/* Container for all books on the page */
+#booksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual book card styling */
+.bookCard {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 150px;
+  box-shadow: 2px 2px 5px #aaa;
+  text-align: center;
+}
+
+/* Book image inside the card */
+.bookCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Book links inside the card */
+.bookCard a {
+   color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+/* Individual review block styling */
+.review {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px #aaa;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Image inside review block */
+.review img {
+  width: 120px;
+  height: 120px;
+  float: right;
+}

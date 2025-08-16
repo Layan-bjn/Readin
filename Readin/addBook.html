@@ -1,0 +1,118 @@
+<!-- 
+    File: addBook.html
+    Project: Readin
+    Description: This page allows users to add new books to the Readin platform. 
+                 It contains a form to collect book details including title, author, 
+                 category, description, condition, and an optional image upload. 
+                 Submitted data will be processed for inclusion in the site's book database.
+    Author: Layan Bajandooh
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Responsive design meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Page title -->
+        <title>Add Book – Readin</title>
+
+        <!-- Common and page-specific styles -->
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/addBook.css">
+    </head>
+    <body>
+        <!-- Website Header -->
+        <header>
+            <img src="images/logo.jpg" alt="Readin Logo" />
+            <h1 id="webSiteName">Readin</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav id="navBar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="BrowseBook.html">Browse Books</a></li>
+                <li><a href="addBook.html">Add Book</a></li>
+                <li><a href="BookDetails.html">Book Details</a></li>
+                <li><a href="requestBorrow.html">Request Borrow</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+
+            <!-- Search Form -->
+            <form class="search-form" action="#" method="get">                <input type="text" placeholder="Search books...">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+
+        <!-- Main Content Section -->
+        <div class="content">
+            <h2>Add a New Book</h2>
+
+            <!-- Book Submission Form -->
+            <form id="bookForm" action="#" method="post">
+                <!-- Book Title -->
+                <p>Book Title:</p>
+                <input type="text" id="book-title" name="book-title" placeholder=" Enter Book Title" required>
+                
+                <!-- Book Author -->
+                <p>Book Author:</p>
+                <input type="text" id="book-author" name="book-author" placeholder="Enter Author's name" required>
+                
+                <!-- Book Category Options -->
+                <p>Book Category:</p>
+                <input type="checkbox" name="book-category" value="novel"> Novel<br>
+                <input type="checkbox" name="book-category" value="education"> Education<br>
+                <input type="checkbox" name="book-category" value="arts"> Arts<br>
+                <input type="checkbox" name="book-category" value="science"> Science<br>
+                <input type="checkbox" name="book-category" value="history"> History<br>
+                <input type="checkbox" name="book-category" value="fantasy"> Fantasy<br>
+                <input type="checkbox" name="book-category" value="selfhelp"> Self-help<br>
+                
+                <!-- Book Description -->
+                <p>Book Description:</p>
+                <textarea id="book-description" name="book-description" rows="4" placeholder="Enter Description" required></textarea>
+                
+                <!-- Book Condition -->
+                <p>Book Status:</p>
+                <input type="radio" name="book-status" value="new" required> New<br>
+                <input type="radio" name="book-status" value="used"> Used<br>
+                <input type="radio" name="book-status" value="good"> Good Condition<br>
+                
+                <!-- Book Image Upload -->
+                <p>Upload Book Image:</p>
+                <input type="file" id="book-image" name="book-image" accept="image/*"><br>
+                
+                <!-- Submit Button -->
+                <button type="submit">Add Book</button>
+
+                <!-- Confirmation Message (Hidden by default) -->
+                <p id="confirmationMessage" class="hidden">✅ Thank you! Your form has been submitted successfully.</p>
+            </form>
+        </div>
+
+        <!-- Website Footer -->
+        <footer>
+            <!-- About Section -->
+            <div class="description">
+                <h3>About Readin</h3>
+                <p>A community-driven platform for sharing and borrowing books among locals.</p>
+            </div>
+        
+            <!-- Contact Information -->
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@Readin.com</p>
+                <p>Phone: +966 512 3456 78</p>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+        <!-- JavaScript Files -->
+        <script src="js/common.js"></script>
+        <script src="js/addBook.js"></script>
+    </body>
+</html>

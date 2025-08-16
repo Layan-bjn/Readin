@@ -1,0 +1,48 @@
+
+main {
+  padding: 20px;
+}
+
+main h2 {
+  color: #A05A2C;
+}
+
+#booksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bookCard {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 150px;
+  box-shadow: 2px 2px 5px #aaa;
+  text-align: center;
+}
+
+.bookCard img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.bookCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bookCard a {
+  color: inherit;     
+  text-decoration: none; 
+  display: block;    
+}
+
+.bookCard:active {
+  transform: scale(0.97); 
+  box-shadow: 0 0 5px #aaa; 
+  opacity:0.8;
+}
